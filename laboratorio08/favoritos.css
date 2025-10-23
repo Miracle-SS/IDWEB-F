@@ -1,0 +1,19 @@
+a:link {
+    color: green;
+    background-color: #d9fdd3;
+    }
+        
+a:visited {
+    color: purple;
+    background-color: #f3e5f5;
+    }
+        
+a:hover {
+    color: red;
+    background-color: #ffcdd2;
+    }
+        
+a:active {
+    color: orange;
+    background-color: #ffe0b2;
+    }
