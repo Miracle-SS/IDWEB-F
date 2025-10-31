@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modelo de Cajas con Flexbox</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f4f6ff;
+      text-align: center;
+    }
+
+    h1 {
+      background: linear-gradient(90deg, #43cea2, #185a9d);
+      color: white;
+      padding: 20px;
+      margin: 0;
+    }
+
+    .contenedor {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      padding: 40px;
+    }
+
+    .tarjeta {
+      background-color: white;
+      border: 3px solid #43cea2;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 15px;
+      width: 250px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    .tarjeta:hover {
+      transform: translateY(-5px);
+    }
+  </style>
+</head>
+<body>
+  <h1>Modelo de Cajas con Flexbox</h1>
+  <div class="contenedor">
+    <div class="tarjeta">Caja 1: Padding, Border y Margin visibles.</div>
+    <div class="tarjeta">Caja 2: Aplicando modelo de cajas.</div>
+    <div class="tarjeta">Caja 3: Organizadas con Flexbox.</div>
+    <div class="tarjeta">Caja 4: Espacio entre elementos.</div>
+  </div>
+</body>
+</html>

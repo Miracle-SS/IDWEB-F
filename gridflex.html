@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog con Grid + Flexbox</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      display: grid;
+      grid-template-areas:
+        "header"
+        "nav"
+        "main"
+        "aside"
+        "footer";
+      background: #f5f6fa;
+    }
+
+    header, nav, main, aside, footer {
+      padding: 20px;
+      border: 2px solid #9c27b0;
+      margin: 10px;
+      border-radius: 10px;
+    }
+
+    header {
+      grid-area: header;
+      background: linear-gradient(90deg, #8e2de2, #4a00e0);
+      color: white;
+      text-align: center;
+    }
+
+    nav {
+      grid-area: nav;
+      background-color: #ece2ff;
+      text-align: center;
+    }
+
+    main {
+      grid-area: main;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      background-color: white;
+    }
+
+    article {
+      border: 2px solid #8e2de2;
+      padding: 15px;
+      margin: 10px;
+      width: 280px;
+      border-radius: 10px;
+      text-align: center;
+      box-sizing: border-box;
+    }
+
+    aside {
+      grid-area: aside;
+      background-color: #e1bee7;
+      text-align: center;
+    }
+
+    footer {
+      grid-area: footer;
+      background-color: #4a00e0;
+      color: white;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header><h1>Mi Blog Personal</h1></header>
+  <nav>Inicio | Noticias | Contacto</nav>
+  <main>
+    <article>Artículo 1: Tema interesante</article>
+    <article>Artículo 2: Más contenido útil</article>
+    <article>Artículo 3: Últimas novedades</article>
+  </main>
+  <aside>Sección lateral: anuncios o enlaces</aside>
+  <footer>© 2025 Blog GridFlex</footer>
+</body>
+</html>
